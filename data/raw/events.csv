@@ -1,0 +1,4 @@
+event_id,service_name,event_type,status_code,response_time_ms,event_timestamp
+evt_001,checkout-service,request,200,175,2026-09-22T09:00:01
+evt_002,payment-service,request,200,230,2026-09-22T09:00:04
+evt_003,payment-service,request,500,1250,2026-09-21T09:00:15
