@@ -36,6 +36,7 @@ def get_new_events(incoming_df, existing_df):
 
 def run_pipeline(input_path, output_path):
     logging.info("Pipeline started")  
+
     required_columns =    ["event_id",
     "service_name",
     "event_type",
@@ -67,6 +68,7 @@ def run_pipeline(input_path, output_path):
     # Write cleaned events to output CSV
     write_events(df, output_path, has_existing_data)
     logging.info("Pipeline completed successfully")
+    return df  # Return the cleaned DataFrame for further use if needed
 
 if __name__ == "__main__":
     input_path = "data/raw/events.csv"
